@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./numbers_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 2em;
+}
+
+
+.game-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 45vh;
+    width: 70vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    
+}
+
+.info-area{
+    width: 40%;
+    height: auto;
+    padding: 3em;
+    border-radius: 5px 0px 0px 5px;
+    word-wrap: break-word;
+    background-color: rgb(220, 213, 197, 0.9);
+    color: #083236;
+}
+
+.play-area{
+    width: 60%;
+    padding: 2em 2em 2em 3em;
+    height: auto;
+    background-color: #0e5e66;
+    color: #e7e1d1;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 1.4em;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+h1{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.8em;
+    padding-bottom: 2em;
+    letter-spacing: 1px;
+}
+
+button {
+    border: none;
+    height: 2em;
+    color: #0e5e66;
+    font-weight: bold;
+    width: auto;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 2px;
+    background: #dcd5c5;
+    font-family: 'Overpass Mono', monospace;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.inputNumber{
+    font-family: 'Overpass Mono', monospace;
+    padding-left: 0.7em;
+    padding-top: 0.2em;
+    height: 1.4em;
+    font-size: 1em;
+    width: 5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
+
+#message{
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 500;
+    font-size: 1em;
+    padding-top: 3em;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+#resultList{
+    padding-left: 2em;
+    padding-top: 1.5em;
+    margin: 0;
+    font-weight: 100;
+}
+
+li::marker {
+    color: #c8d8da;
+    font-weight: 500;
+}
+
+.bottom{
+    display: flex;
+    margin-top: 1em;
+    width: auto;
+    justify-content: center;
+}
+
+.restart-button {
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #f0e057;
+    font-weight: 600;
+    width: 200px;
+    height: 2em;
+    text-align: center;
+    margin-top: 1em;
+    border-radius: 2px;
+    background: #ce5d63;
+    font-family: 'Overpass Mono', monospace;
+}
+
+@media (max-width: 1500px) {
+
+.game-area{
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.info-area{
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+}
+
+.play-area{
+    font-size: 1.2em;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#message{
+    font-size: 1em;
+    padding-top: 2em;
+}
+
+button {
+    padding-top: 7px;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 1350px) {
+
+    .game-area{
+        flex-direction: column;
+        width: 40vw;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .game-area{
+        flex-direction: column;
+        width: 40vw;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+    .play-area{
+        font-size: 1em;
+    }
+}

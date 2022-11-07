@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Number Guessing Game</title>
+</head>
+<body>
+<div class="game-area">
+
+    <div class="info-area">
+        <h1>I am thinking of a number <br> between 1 and 100. <br> <br> Can you guess which? <br> <br> <br> You only have 5 tries!</h1>
+    </div>
+
+
+    <div class="play-area">
+
+        <section>
+            <label for="guessField">Write a number: </label> <!-- Text till fältet -->
+
+            <input type="number" class="inputNumber"> <!-- Själva fältet -->
+    
+            <button class="btn">Click to guess!</button> <!-- Knapp för att skicka in gissning -->
+            <h2 id="message"></h2> <!-- Svar på gissning -->
+    
+            <!-- Listan över gissningar -->
+            <ol id="resultList">
+            </ol>
+
+        </section>
+
+<section class="bottom">
+    <button type="button" class="restart-button" onClick="window.location.reload()">
+        Restart game
+     </button>
+</section>
+
+    </div>
+
+
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
